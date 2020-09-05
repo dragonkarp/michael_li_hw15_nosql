@@ -18,26 +18,11 @@ const workoutsSchema = new Schema({
             trim: true,
             required: "Enter the name of the workout." 
         },
-        duration: {
-            type: Number,
-            default: 0
-        },
-        weight: {
-            type: Number,
-            default: 0
-        },
-        reps: {
-            type: Number,
-            default: 0
-        },
-        sets: {
-            type: Number,
-            default: 0
-        },
-        distance: {
-            type: Number,
-            default: 0
-        }
+        duration: Number,
+        weight: Number,
+        reps: Number,
+        sets: Number,
+        distance: Number
     }]
 })
 
@@ -45,4 +30,10 @@ const Workouts = mongoose.model("Workouts", workoutsSchema);
 
 module.exports = Workouts;
 
+
+
+
+
 //exercises: Array
+
+//use reduce to get totals
