@@ -28,6 +28,14 @@ const workoutsSchema = new Schema({
     duration: {
         type: Number,
         default: 0
+    },
+    cardio: {
+        type: Boolean,
+        required: "Is this a cardio workout?"
+    },
+    cardioDistance: {
+        type: Number,
+        default: 0
     }
 })
 
